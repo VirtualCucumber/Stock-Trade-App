@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Stock-Trade-App/static/css/main.d1b05096.chunk.css",
-    "main.js": "/Stock-Trade-App/static/js/main.aef8ea1b.chunk.js",
-    "main.js.map": "/Stock-Trade-App/static/js/main.aef8ea1b.chunk.js.map",
+    "main.js": "/Stock-Trade-App/static/js/main.8694afe2.chunk.js",
+    "main.js.map": "/Stock-Trade-App/static/js/main.8694afe2.chunk.js.map",
     "runtime-main.js": "/Stock-Trade-App/static/js/runtime-main.b39ded7f.js",
     "runtime-main.js.map": "/Stock-Trade-App/static/js/runtime-main.b39ded7f.js.map",
     "static/css/2.47e06e2e.chunk.css": "/Stock-Trade-App/static/css/2.47e06e2e.chunk.css",
     "static/js/2.70d3510b.chunk.js": "/Stock-Trade-App/static/js/2.70d3510b.chunk.js",
     "static/js/2.70d3510b.chunk.js.map": "/Stock-Trade-App/static/js/2.70d3510b.chunk.js.map",
     "index.html": "/Stock-Trade-App/index.html",
-    "precache-manifest.b3896ba63c7222b42afbfd87441da89c.js": "/Stock-Trade-App/precache-manifest.b3896ba63c7222b42afbfd87441da89c.js",
+    "precache-manifest.aaf65250e6b965ab6b0093671cb5ce38.js": "/Stock-Trade-App/precache-manifest.aaf65250e6b965ab6b0093671cb5ce38.js",
     "service-worker.js": "/Stock-Trade-App/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/Stock-Trade-App/static/css/2.47e06e2e.chunk.css.map",
     "static/css/main.d1b05096.chunk.css.map": "/Stock-Trade-App/static/css/main.d1b05096.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.70d3510b.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.aef8ea1b.chunk.js"
+    "static/js/main.8694afe2.chunk.js"
   ]
 }
