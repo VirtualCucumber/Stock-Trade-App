@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Stock-Trade-App/static/css/main.d1b05096.chunk.css",
+    "main.js": "/Stock-Trade-App/static/js/main.fe9ad3b3.chunk.js",
+    "main.js.map": "/Stock-Trade-App/static/js/main.fe9ad3b3.chunk.js.map",
+    "runtime-main.js": "/Stock-Trade-App/static/js/runtime-main.b39ded7f.js",
+    "runtime-main.js.map": "/Stock-Trade-App/static/js/runtime-main.b39ded7f.js.map",
+    "static/js/2.c6640b25.chunk.js": "/Stock-Trade-App/static/js/2.c6640b25.chunk.js",
+    "static/js/2.c6640b25.chunk.js.map": "/Stock-Trade-App/static/js/2.c6640b25.chunk.js.map",
+    "index.html": "/Stock-Trade-App/index.html",
+    "precache-manifest.36ff8643009b7e7a5f46a8cb75b7e1f9.js": "/Stock-Trade-App/precache-manifest.36ff8643009b7e7a5f46a8cb75b7e1f9.js",
+    "service-worker.js": "/Stock-Trade-App/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/Stock-Trade-App/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.c6640b25.chunk.js.LICENSE": "/Stock-Trade-App/static/js/2.c6640b25.chunk.js.LICENSE",
+    "static/media/logo.svg": "/Stock-Trade-App/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b39ded7f.js",
+    "static/js/2.c6640b25.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.fe9ad3b3.chunk.js"
+  ]
+}
