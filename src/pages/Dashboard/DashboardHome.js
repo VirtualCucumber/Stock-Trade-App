@@ -6,6 +6,7 @@ import Section from '../../components/Body/Section';
 import GraphData from '../../services/StockBackend/GraphData';
 import moment from "moment";
 import { Line, Pie, Bar } from 'react-chartjs-2';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class DashboardHome extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class DashboardHome extends React.Component {
         this.state = {
             graphData: 
                 {
-                    price:[0,0,0,0,0,0,0,0,0,0],
+                    price:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
                     time:['0','0','0','0','0','0','0','0','0','0']
                 }
             
@@ -27,10 +28,10 @@ class DashboardHome extends React.Component {
     }
 
     getGraphData() {
-        this.graphData.getGraphData().then(response => {
+        this.graphData.getGraphData('AAPL', 'day', 10).then(response => {
             
             for (let i = 0; i < response.time.length; i++) {
-                response.time[i] = moment(response.time[i]).format('LT');
+                response.time[i] = moment(response.time[i]).format('dddd');
             }
             
             this.setState({graphData: response});
@@ -56,29 +57,31 @@ class DashboardHome extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                <Col xl={6}>
-                        <Section title='Apple'>
+                <Col xl={12}>
+                        <Section title='Chart' icon='chart-area'>
                             <Line 
+                                height={300}
                                 data={{
                                     labels:this.state.graphData.time,
                                     datasets: [
                                         {
                                         label:'Stock',
                                         data:this.state.graphData.price,
-                                        lineTension: 0,
-                                        backgroundColor: "rgba(2,117,216,0.2)",
-                                        borderColor: "rgba(2,117,216,1)",
-                                        pointRadius: 5,
-                                        pointBackgroundColor: "rgba(2,117,216,1)",
-                                        pointBorderColor: "rgba(255,255,255,0.8)",
-                                        pointHoverRadius: 5,
-                                        pointHoverBackgroundColor: "rgba(2,117,216,1)",
+                                        lineTension: 0.3,
+                                        borderColor: "rgb(255, 99, 132)",
+                                        pointBackgroundColor: "rgb(255, 99, 132)",
                                         pointHitRadius: 50,
                                         pointBorderWidth: 2,
+                                        fill: false,
+                                        borderDash: [5, 5],
+                                        pointRadius: 15,
+                                        pointHoverRadius: 10,
                                         }
                                     ]
                                 }}
                                 options={{
+                                    responsive:true,
+                                    maintainAspectRatio:false,
                                     title:{
                                         display:false,
                                         text:'Apple',
@@ -101,7 +104,8 @@ class DashboardHome extends React.Component {
                         </Section>
                     </Col>
                     <Col xl={6}>
-                        <Section title='Demographic'>
+                        
+                        <Section title='Demographic' icon='chart-pie'>
                             <Pie 
                                 data={{
                                     labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],

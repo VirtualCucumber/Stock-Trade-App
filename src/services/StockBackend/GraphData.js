@@ -10,9 +10,9 @@ class GraphData extends React.Component {
         return axios.get(url).then(response => Response.data);
     }*/
 
-    async getGraphData() {
+    async getGraphData(stock, timeFrame, limit) {
         
-        const url = `${API_URL}/stock_data`;
+        const url = `${API_URL}/stock/${stock}/${timeFrame}/${limit}`;
         return axios.get(url).then(response => response.data);
     }
 
