@@ -44,16 +44,16 @@ class DashboardHome extends React.Component {
                 <PageTitle title="Dashboard" />
                 <Row>
                     <Col xl={3} md={6}>
-                        <Card title='Stock Property' bgStyle='bg-primary'/>
+                        <Card title='Stock price here' bgStyle='bg-primary'/>
                     </Col>
                     <Col xl={3} md={6}>
-                        <Card title='Stock Property' bgStyle='bg-warning'/>
+                        <Card title='Stock price difference from last year' bgStyle='bg-warning'/>
                     </Col>
                     <Col xl={3} md={6}>
-                        <Card title='Stock Property' bgStyle='bg-success'/>
+                        <Card title='Stock rank with other companies' bgStyle='bg-success'/>
                     </Col>
                     <Col xl={3} md={6}>
-                        <Card title='Stock Property' bgStyle='bg-danger'/>
+                        <Card title='Google trend data of stock' bgStyle='bg-danger'/>
                     </Col>
                 </Row>
                 <Row>
@@ -67,14 +67,14 @@ class DashboardHome extends React.Component {
                                         {
                                         label:'Stock',
                                         data:this.state.graphData.price,
-                                        lineTension: 0.3,
+                                        lineTension: 0,
                                         borderColor: "rgb(255, 99, 132)",
                                         pointBackgroundColor: "rgb(255, 99, 132)",
                                         pointHitRadius: 50,
                                         pointBorderWidth: 2,
                                         fill: false,
                                         borderDash: [5, 5],
-                                        pointRadius: 15,
+                                        pointRadius: 5,
                                         pointHoverRadius: 10,
                                         }
                                     ]
