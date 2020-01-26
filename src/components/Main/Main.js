@@ -9,7 +9,12 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            sidebarOpen: false
+            overlay: true,
+            sidebarOpen: false,
+            stockData: {
+                    price:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    time:['0','0','0','0','0','0','0','0','0','0']
+            }
         }
 
         this.handleViewSidebar = this.handleViewSidebar.bind(this);
@@ -20,17 +25,27 @@ class Main extends React.Component {
         console.log(this.state.sidebarOpen);
     }
 
+    handleStockData = (data) => {
+        this.setState({
+            stockData: data
+        });
+    }
+
     render() {
-        var sideBarClass = this.state.sidebarOpen ? "sb-nav-fixed sb-sidenav-toggled" : "sb-nav-fixed";
+        let sideBarClass = this.state.sidebarOpen ? "sb-nav-fixed sb-sidenav-toggled" : "sb-nav-fixed";
         return (
             <div className={sideBarClass}>
                 <main>
-                    <TopNavbar onClick={this.handleViewSidebar} />
+                    <TopNavbar handleStockData={this.handleStockData} onClick={this.handleViewSidebar} />
                     <div id="layoutSidenav">
                         <SideNavbar isOpen={this.state.sidebarOpen} />
                         <div id="layoutSidenav_content">
-                            <Route exact path="/" component={DashboardHome} />
-                              
+                            <Route 
+                            exact path="/"
+                            render={props => (
+                                <DashboardHome {...props} handleStockData={this.handleStockData} stockData={this.state.stockData} />
+                            )}
+                            />  
                         </div>
                     </div>
                 </main>

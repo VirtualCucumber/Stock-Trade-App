@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Card extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class Card extends React.Component {
     render() {
         return(
             <div className={"card text-white mb-4 " + this.props.bgStyle}>
-                <div className="card-body">{this.props.title}</div>
+                <div className="card-body"><FontAwesomeIcon icon={this.props.icon} size='lg' /> {this.props.title}</div>
             </div>
             )
     }
