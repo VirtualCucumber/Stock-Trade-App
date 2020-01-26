@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/Stock-Trade-App/static/css/main.8ec1dc59.chunk.css",
-    "main.js": "/Stock-Trade-App/static/js/main.f08a3dcf.chunk.js",
-    "main.js.map": "/Stock-Trade-App/static/js/main.f08a3dcf.chunk.js.map",
+    "main.css": "/Stock-Trade-App/static/css/main.9be22e50.chunk.css",
+    "main.js": "/Stock-Trade-App/static/js/main.8eb9bd8b.chunk.js",
+    "main.js.map": "/Stock-Trade-App/static/js/main.8eb9bd8b.chunk.js.map",
     "runtime-main.js": "/Stock-Trade-App/static/js/runtime-main.b39ded7f.js",
     "runtime-main.js.map": "/Stock-Trade-App/static/js/runtime-main.b39ded7f.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/Stock-Trade-App/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.6742785d.chunk.js": "/Stock-Trade-App/static/js/2.6742785d.chunk.js",
-    "static/js/2.6742785d.chunk.js.map": "/Stock-Trade-App/static/js/2.6742785d.chunk.js.map",
+    "static/js/2.383fa73e.chunk.js": "/Stock-Trade-App/static/js/2.383fa73e.chunk.js",
+    "static/js/2.383fa73e.chunk.js.map": "/Stock-Trade-App/static/js/2.383fa73e.chunk.js.map",
     "index.html": "/Stock-Trade-App/index.html",
-    "precache-manifest.7030caf105e7cfc8babc8cdded807015.js": "/Stock-Trade-App/precache-manifest.7030caf105e7cfc8babc8cdded807015.js",
+    "precache-manifest.b25c64d02c208e54de883d26807073aa.js": "/Stock-Trade-App/precache-manifest.b25c64d02c208e54de883d26807073aa.js",
     "service-worker.js": "/Stock-Trade-App/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/Stock-Trade-App/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.8ec1dc59.chunk.css.map": "/Stock-Trade-App/static/css/main.8ec1dc59.chunk.css.map",
-    "static/js/2.6742785d.chunk.js.LICENSE": "/Stock-Trade-App/static/js/2.6742785d.chunk.js.LICENSE"
+    "static/css/main.9be22e50.chunk.css.map": "/Stock-Trade-App/static/css/main.9be22e50.chunk.css.map",
+    "static/js/2.383fa73e.chunk.js.LICENSE": "/Stock-Trade-App/static/js/2.383fa73e.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.b39ded7f.js",
-    "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.6742785d.chunk.js",
-    "static/css/main.8ec1dc59.chunk.css",
-    "static/js/main.f08a3dcf.chunk.js"
+    "static/js/2.383fa73e.chunk.js",
+    "static/css/main.9be22e50.chunk.css",
+    "static/js/main.8eb9bd8b.chunk.js"
   ]
 }
